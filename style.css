@@ -1,0 +1,36 @@
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+
+
+#hero input{
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 0;
+    width: 300px;
+}
+
+#hero{
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Capa de transparencia */
+        url('superhero-img.jpg') center/cover no-repeat; /* Imagen de fondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+.resultado{
+    background-color:;
+    margin: 30px auto;
+}
+
+.card{
+    border:none;
+}

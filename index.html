@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Buscador con API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="hero">
+        <h1>Buscador de Superhéroes</h1>
+        <h4>Ingresa el número de tu super héroe favorito</h4>
+        <input type="text" id="busqueda" placeholder="Ingresa el número de un superhéroe" class="form-control">
+        <button id="buscar" class="btn btn-lg btn-success">Buscar</button>
+    </div>
+
+    <div id="resultado" class="resultado row container">
+
+        <div class="col-7">
+            <div class="card mb-3" style="max-width: 1000px;">
+                <div class="row g-0">
+                    <div class="col-md-3 mt-5 pt-1">
+                        <img id="imagen" src="..." class="img-fluid rounded object-fit-cover" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h3 id="nombre">
+                                Fancy display heading
+                                <small class=" card-title text-body-secondary">With faded secondary text</small>
+                            </h3>
+                            <ol class="list-group list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Nombre Completo</div>
+                                        <p id="nombre-completo"></p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Aliases</div>
+                                        <p id="alias"></p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Fecha de nacimiento</div>
+                                        <p id="fecha-de-nacimiento"></p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Work</div>
+                                        <p id="occupation"></p>
+                                        <p id="base"></p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Connections</div>
+                                        <p id="group-affiliation"></p>
+                                        <p id="relatives"></p>
+                                    </div>
+                                </li>
+                            </ol>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-3" id="chartContainer"></div>
+        <div class="container text-center"><a href="#hero" class="btn btn-lg btn-warning ">Escoge otro superheroe!</a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.canvasjs.com/jquery.canvasjs.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
